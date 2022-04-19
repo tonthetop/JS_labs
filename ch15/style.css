@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: #1a1c1d;
+}
+
+body>div {
+    max-width: 1000px;
+    padding-top: 50px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h1,
+h2,
+h3,
+span,
+p,
+a,
+div,
+body,
+button {
+    font-family: "PT Sans", sans-serif;
+    color: #fff;
+}
+
+.balloon {
+    font-size: 40px;
+}
+
+.active {
+    display: block;
+    animation-name: popOut;
+    animation-duration: 4s;
+}
+
+button {
+    background: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+
+/* The animation code */
+
+@keyframes popOut {
+    from {
+        color: #1a1c1d;
+    }
+    to {
+        color: #fff;
+    }
+}
